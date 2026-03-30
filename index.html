@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RiNi Life</title>
+<link rel="manifest" href="manifest.json">
+<style>
+body{margin:0;font-family:Arial;background:#6f8faa;color:#fff;text-align:center}
+.card{background:rgba(255,255,255,0.45);color:#333;margin:20px;border-radius:20px;padding:20px}
+</style>
+</head>
+<body>
+<h1>RiNi Life</h1>
+<div class="card" onclick="newMsg()">
+<b>Mom's Message</b><br>
+<span id="msg"></span>
+</div>
+<script>
+const arr=["오늘도 충분히 잘하고 있어","괜찮아, 천천히 가도 돼","너 잘하고 있어"];
+function newMsg(){
+ document.getElementById('msg').innerText=arr[Math.floor(Math.random()*arr.length)];
+}
+newMsg();
+</script>
+</body>
+</html>

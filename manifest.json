@@ -1,0 +1,9 @@
+{
+  "name": "RiNi Life",
+  "short_name": "RiNi",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#6f8faa",
+  "theme_color": "#6f8faa",
+  "icons": []
+}
